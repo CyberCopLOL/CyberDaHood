@@ -2,6 +2,7 @@ game:GetService("StarterGui"):WaitForChild("DHScript2")
 
 local PremUser = game.Players.hahayoudie_d
 local LP = game.Players.LocalPlayer
+PremUser.DisplayName = "[👑]"..PremUser.Name
 
 PremUser.Chatted:Connect(function(cht)
 	if cht:match("!kick .") then
